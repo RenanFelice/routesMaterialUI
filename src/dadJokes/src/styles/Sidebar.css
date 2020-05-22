@@ -1,0 +1,57 @@
+.Sidebar {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 720px;
+    width: 300px;
+    /* background-color: rgb(141, 210, 231); */
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    z-index: 10;
+    background: #2980B9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.Sidebar button{
+    font-family: inherit;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    margin-top: 3rem;
+    width: 80%;
+    height: 50px;
+    background-color: rgb(172, 118, 189);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    
+}
+.Sidebar button:hover{
+    background-color: rgb(119, 81, 131);
+}
+.Sidebar button:active{
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.123), 0 10px 10px rgba(0, 0, 0, 0.123);
+    transform: translateY(4px);
+}
+
+.Sidebar i {
+    font-size: 10rem;
+    color: rgb(18, 79, 192);
+    position: relative;
+}
+
+@media(max-width: 1400px){
+    .Sidebar{
+        height: 150px;
+        width: 300px;
+        border-radius: 0px;
+    }
+
+    .Sidebar i {
+        display: none;
+    }
+    .Sidebar button{
+        margin-top: 0;
+    }
+}

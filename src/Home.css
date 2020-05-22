@@ -1,0 +1,13 @@
+.Homepage{
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(233, 233, 233);
+}
+
+.title{
+    height: 80%;
+}

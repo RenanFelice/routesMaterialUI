@@ -1,0 +1,102 @@
+@keyframes wiggleanimation{
+    0% {
+      -webkit-transform: rotate(0deg);
+    }
+    20% {
+      -webkit-transform: rotate(5deg);
+    
+    }
+    40% {
+      -webkit-transform: rotate(0deg);
+    }
+    60% {
+      -webkit-transform: rotate(-5deg);
+    }
+    80% {
+      -webkit-transform: rotate(0deg);
+      -webkit-transform: scale(1.2);
+    
+    }
+    100%{
+      
+    }
+}
+
+.Joke{
+  font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 99px;
+    width: 100%;
+    border-bottom: 1px solid rgba(204, 203, 203, 0.589);
+}
+
+.Joke-votes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 3rem;
+    font-size: 1.5rem;
+}
+
+.fa-trash{
+    margin: 0 4rem;
+    font-size: 1.5rem;
+}
+
+.Joke-votes-qty{
+    border: 3px solid rgb(226, 226, 8);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.fa-thumbs-up{
+    margin-right: 1rem;
+    transition: all ease-in-out 0.2s;
+}
+.fa-thumbs-down{
+    margin-left: 1rem;
+    transition: all ease-in-out 0.2s;
+}
+
+.fa-thumbs-up:hover{
+    color: rgb(37, 221, 46);
+    transform: scale(1.5);
+}
+.fa-thumbs-down:hover{
+    color: rgb(202, 32, 32);
+    transform: scale(1.5);
+}
+
+.fa-trash:hover{
+    color: red;
+    animation: wiggleanimation 0.5s linear 0.3s;
+  }
+
+.red{
+  border: 3px solid red;
+}
+
+.green{
+  border: 3px solid green;
+}
+
+@media(max-width: 1400px){
+  .Joke{
+    text-align: center;
+
+  }
+  .Joke-votes{
+    display: none;
+  }¨
+ 
+ .fas, .fa-trash{
+  display: none;
+}
+
+}
